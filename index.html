@@ -2,21 +2,42 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team GigaTech</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Falta poco...</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000; /* Fondo negro AMOLED */
+            color: #fff; /* Letras blancas */
+            font-size: 48px; /* Tamaño de fuente */
+            font-family: Arial, sans-serif; /* Fuente */
+        }
+
+        .dots {
+            display: inline-block;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 20% {
+                opacity: 0;
+            }
+            30%, 50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <div class="card">
-        <div class="bg">
-            <h1>
-                Team GigaTech te invita a:
-            </h1>
-        </div>
-        <div class="blob"></div>
+    <div>
+        Falta poco<span class="dots">...</span>
     </div>
-
 </body>
 </html>
